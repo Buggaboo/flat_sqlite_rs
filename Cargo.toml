@@ -1,0 +1,17 @@
+[package]
+name = "flat_sqlite_rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+base64 = "0.21.3"
+
+flatbuffers = "23.5.26"
+sqlite-loadable = { git = "https://github.com/Buggaboo/sqlite-loadable-rs", branch = "feature/add-create-window-function" }
+lean-buffer = { git = "https://github.com/Buggaboo/lean_buffer.git", branch = "main" }
+
+[dev-dependencies]
+rusqlite = "0.29.0"
+
+[lib]
+crate-type=["lib", "staticlib", "cdylib"]
